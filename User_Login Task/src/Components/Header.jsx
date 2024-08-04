@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import { Link, NavLink, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 
@@ -51,14 +50,7 @@ function Header() {
                             <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success text-light" type="submit">Search</button>
                         </form>
-                        {/* <ul className="navbar-nav d-flex">
-                            <li className="nav-item">
-                                <NavLink className="nav-link active" aria-current="page" to='/signup'>Sign up</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link active" aria-current="page" to='/login'>Login</NavLink>
-                            </li>
-                        </ul> */}
+
                         {(() => {
                             if (localStorage.getItem('wid')) {
                                 return (
